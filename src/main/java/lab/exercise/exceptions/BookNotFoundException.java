@@ -1,4 +1,4 @@
-package lab.exercise.model.exceptions;
+package lab.exercise.exceptions;
 
 public class BookNotFoundException extends RuntimeException{
 }

@@ -1,6 +1,7 @@
 package lab.exercise.service.impl;
 
 import lab.exercise.model.Author;
+import lab.exercise.model.Country;
 import lab.exercise.repository.AuthorRepository;
 import lab.exercise.service.AuthorService;
 import org.springframework.stereotype.Service;
@@ -26,6 +27,13 @@ public class AuthorServiceImpl implements AuthorService {
     @Override
     public List<Author> findAll() {
         return authorRepository.findAll();
+    }
+
+    @Override
+    public Optional<Author> save(String name, String surname, Country country) {
+        Author a = new Author(name,surname,country);
+        this.authorRepository.save(a);
+        return Optional.of(a);
     }
 
 

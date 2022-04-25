@@ -4,39 +4,78 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="404a068b-4e14-409b-a2b7-65f1310c3a7b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lab/exercise/ExerciseApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lab/exercise/model/Author.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lab/exercise/model/Book.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lab/exercise/model/Category.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lab/exercise/model/Country.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lab/exercise/model/Role.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lab/exercise/model/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lab/exercise/model/dto/BookDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lab/exercise/model/exceptions/AuthorNotFoundException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lab/exercise/model/exceptions/BookNotFoundException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lab/exercise/repository/AuthorRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lab/exercise/repository/BookRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lab/exercise/repository/CountryRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lab/exercise/repository/UserRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lab/exercise/service/AuthorService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lab/exercise/service/BookService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lab/exercise/service/CountryService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lab/exercise/service/UserService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lab/exercise/service/impl/AuthorServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lab/exercise/service/impl/BookServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lab/exercise/service/impl/CountryServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lab/exercise/service/impl/UserServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lab/exercise/web/BookController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application-h2.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/lab/exercise/ExerciseApplicationTests.java" beforeDir="false" />
+    <list default="true" id="404a068b-4e14-409b-a2b7-65f1310c3a7b" name="Changes" comment="fixed code">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lab/exercise/ExerciseApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lab/exercise/config/DataInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lab/exercise/exceptions/AuthorNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lab/exercise/exceptions/BookNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lab/exercise/exceptions/InvalidUsernameOrPasswordException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lab/exercise/exceptions/PasswordsDoNotMatchException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lab/exercise/exceptions/UserNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lab/exercise/exceptions/UsernameAlreadyExistsException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lab/exercise/model/Author.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lab/exercise/model/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lab/exercise/model/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lab/exercise/model/Country.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lab/exercise/model/dto/BookDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lab/exercise/repository/AuthorRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lab/exercise/repository/BookRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lab/exercise/repository/CountryRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lab/exercise/service/AuthorService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lab/exercise/service/BookService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lab/exercise/service/CountryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lab/exercise/service/impl/AuthorServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lab/exercise/service/impl/BookServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lab/exercise/service/impl/CountryServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lab/exercise/web/AuthorController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lab/exercise/web/BookController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lab/exercise/web/CategoryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application-h2.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application-prod.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/lab/exercise/ExerciseApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_jpa_2_6_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/lab/exercise/ExerciseApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/lab/exercise/model/Author.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/lab/exercise/model/Book.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/lab/exercise/model/Category.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/lab/exercise/model/Country.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/lab/exercise/model/Role.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/lab/exercise/model/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/lab/exercise/model/dto/BookDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/lab/exercise/model/exceptions/AuthorNotFoundException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/lab/exercise/model/exceptions/BookNotFoundException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/lab/exercise/repository/AuthorRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/lab/exercise/repository/BookRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/lab/exercise/repository/CountryRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/lab/exercise/repository/UserRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/lab/exercise/service/AuthorService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/lab/exercise/service/BookService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/lab/exercise/service/CountryService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/lab/exercise/service/UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/lab/exercise/service/impl/AuthorServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/lab/exercise/service/impl/BookServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/lab/exercise/service/impl/CountryServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/lab/exercise/service/impl/UserServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/lab/exercise/web/AuthorController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/lab/exercise/web/BookController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/resources/application-h2.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/test/java/lab/exercise/ExerciseApplicationTests.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,8 +86,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -97,6 +136,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="h2&#10;postgresql" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
@@ -104,10 +144,11 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../exercise-frontend" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="editing.templates" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -143,8 +184,24 @@
       <option name="presentableId" value="Default" />
       <updated>1648563737970</updated>
       <workItem from="1648563739346" duration="10785000" />
-      <workItem from="1648575172071" duration="11057000" />
+      <workItem from="1648575172071" duration="11787000" />
+      <workItem from="1648652963999" duration="20000" />
+      <workItem from="1648653718131" duration="1882000" />
+      <workItem from="1648671709524" duration="5278000" />
+      <workItem from="1648900246903" duration="3846000" />
+      <workItem from="1649328227054" duration="1091000" />
+      <workItem from="1649523157309" duration="14927000" />
+      <workItem from="1649866313088" duration="42000" />
+      <workItem from="1650566553265" duration="4187000" />
     </task>
+    <task id="LOCAL-00001" summary="fixed code">
+      <created>1648638663796</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1648638663797</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -160,5 +217,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="fixed code" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed code" />
   </component>
 </project>

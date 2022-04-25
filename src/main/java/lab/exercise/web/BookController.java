@@ -31,13 +31,13 @@ public class BookController {
                 .orElseGet(() -> ResponseEntity.notFound().build());
     }
 
+
     @PostMapping("/add")
-    public ResponseEntity<Book> save(@RequestBody BookDto productDto) {
-        return this.bookService.save(productDto)
-                .map(product -> ResponseEntity.ok().body(product))
+    public ResponseEntity<Book> save(@RequestBody BookDto bookDto) {
+        return this.bookService.save(bookDto)
+                .map(book -> ResponseEntity.ok().body(book))
                 .orElseGet(() -> ResponseEntity.badRequest().build());
     }
-
 
     @PutMapping("/edit/{id}")
     public ResponseEntity<Book> save(@PathVariable Long id, @RequestBody BookDto bookDto) {
@@ -46,12 +46,14 @@ public class BookController {
                 .orElseGet(() -> ResponseEntity.badRequest().build());
     }
 
+
     @DeleteMapping("/delete/{id}")
     public ResponseEntity deleteById(@PathVariable Long id) {
         this.bookService.deleteById(id);
         if(this.bookService.findById(id).isEmpty()) return ResponseEntity.ok().build();
         return ResponseEntity.badRequest().build();
     }
+
 
     @GetMapping("mark/{id}")
     public void markAsTaken(@PathVariable Long id)

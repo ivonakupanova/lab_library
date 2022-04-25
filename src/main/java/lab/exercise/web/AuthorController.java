@@ -4,6 +4,7 @@ import lab.exercise.model.Author;
 import lab.exercise.model.Book;
 import lab.exercise.service.AuthorService;
 import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -21,6 +22,7 @@ public class AuthorController {
         this.authorService = authorService;
     }
 
+    @GetMapping
     public List<Author> getAllAuthors() {
         return this.authorService.findAll();
     }
